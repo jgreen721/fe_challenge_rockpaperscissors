@@ -1,0 +1,46 @@
+.rules-card {
+  background: white;
+  padding: 2rem 3.5rem;
+  position: absolute;
+  top: 35%;
+  z-index: 20;
+  border-radius: 0.8rem;
+  transition: 0.2s ease;
+  transform: scale(1);
+}
+
+.rules-h1 {
+  font-size: 3rem;
+  color: var(--darktext);
+}
+
+.top-rules-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rules-flow-chart-div {
+  padding: 3rem 0;
+}
+
+.rules-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.hide-rules {
+  /* display: none; */
+  transform: scale(0);
+}
+
+.icon-close {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.icon-close:hover {
+  transform: scale(1.3) rotate(15deg);
+}

@@ -1,0 +1,104 @@
+.choice-btn {
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  /* padding: 2rem; */
+  height: 165px;
+  width: 165px;
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 15;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice-btn::after {
+  content: "";
+  /* background: black; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: -9%;
+  left: -5%;
+  border: 8px solid rgba(0, 0, 0, 0.3);
+  /* background: red; */
+}
+
+.choice-bg-div {
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+}
+
+.choice-icon-div {
+  height: 125px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+  position: relative;
+  /* box-shadow: inset 2px 4px 5px black; */
+}
+
+.choice-icon-div::after {
+  content: "";
+  height: 100%;
+  width: 110%;
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -1.75rem;
+  left: -1.5rem;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  /* filter: blur(4px); */
+}
+
+.choice-btn:hover {
+  transform: scale(0.9);
+  box-shadow: 2px 3px 10px black;
+  opacity: 75%;
+}
+
+.paper-bg {
+  background: linear-gradient(var(--papergradientbg));
+}
+
+.scissors-bg {
+  background: linear-gradient(var(--scissorsgradientbg));
+}
+
+.rock-bg {
+  background: linear-gradient(var(--rockgradientbg));
+}
+
+.spin-btn {
+  animation: spinwheel 1.5s forwards;
+}
+
+@keyframes spinwheel {
+  0% {
+    transform: rotate(0deg) scale(1.4);
+  }
+
+  100% {
+    transform: rotate(720deg) scale(1);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .choice-btn {
+    height: 135px;
+    width: 135px;
+  }
+
+  .choice-icon-div {
+    height: 105px;
+    width: 105px;
+  }
+}
