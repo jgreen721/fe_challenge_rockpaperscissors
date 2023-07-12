@@ -8,6 +8,24 @@
   align-items: center;
   justify-content: space-between;
   padding: 3rem;
+  transform: scale(0);
+  transition: 1s ease;
+  filter: grayscale(100%) blur(4px);
+  animation: fadein 1.25s forwards;
+}
+
+@keyframes fadein {
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    filter: grayscale(100%) blur(0px);
+    transform: scale(1);
+  }
+  100% {
+    filter: grayscale(0%) blur(0px);
+    transform: scale(1);
+  }
 }
 
 .rules-btn-row {
