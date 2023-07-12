@@ -1,7 +1,7 @@
 .app {
   max-width: 144rem;
   margin: 0 auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: linear-gradient(var(--radialgradient));
   display: flex;
   flex-direction: column;
@@ -114,6 +114,7 @@
 @media screen and (max-width: 650px) {
   .app {
     padding: 1.5rem;
+    /* min-height: 150vh; */
   }
   .rules-btn-row {
     align-items: center;

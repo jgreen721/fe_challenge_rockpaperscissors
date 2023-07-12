@@ -110,3 +110,15 @@
     width: 105px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .choice-btn {
+    height: 115px;
+    width: 115px;
+  }
+
+  .choice-icon-div {
+    height: 95px;
+    width: 95px;
+  }
+}
