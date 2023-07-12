@@ -123,3 +123,10 @@
     width: 135px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .choice-btn-silhouette {
+    height: 115px;
+    width: 115px;
+  }
+}
