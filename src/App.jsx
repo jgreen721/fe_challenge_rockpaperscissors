@@ -4,13 +4,13 @@ import './App.css'
 
 function App() {
  
-  // const moves = [
-  //   {id:1,move:"paper",icon:"./images/icon-paper.svg",background:"paper-bg"},
-  //   {id:2,move:"scissors",icon:"./images/icon-scissors.svg",background:"scissors-bg"},
-  //   {id:3,move:"rock",icon:"./images/icon-rock.svg",background:"rock-bg"},
-  //   {id:4,move:"lizard",icon:"./images/icon-lizard.svg",background:"lizard-bg"},
-  //   {id:5,move:"spock",icon:"./images/icon-spock.svg",background:"spock-bg"}
-  // ]
+  const moves = [
+    {id:1,move:"paper",icon:"./images/icon-paper.svg",background:"paper-bg"},
+    {id:2,move:"scissors",icon:"./images/icon-scissors.svg",background:"scissors-bg"},
+    {id:3,move:"rock",icon:"./images/icon-rock.svg",background:"rock-bg"},
+    {id:4,move:"lizard",icon:"./images/icon-lizard.svg",background:"lizard-bg"},
+    {id:5,move:"spock",icon:"./images/icon-spock.svg",background:"spock-bg"}
+  ]
   const [showRules,setShowRules] = useState(false);
   const [score,setScore] = useState(0)
   const [playerMove,setPlayerMove] = useState("");
