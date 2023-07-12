@@ -2,7 +2,7 @@ import React from 'react'
 import "./AdvancedVersion.css"
 import { ChoiceBtn } from '..'
 
-const AdvancedVersion = () => {
+const AdvancedVersion = ({handleAdvancedPlayerMove}) => {
     const moves = [
         {id:1,move:"paper",icon:"./images/icon-paper.svg",background:"paper-bg"},
         {id:2,move:"scissors",icon:"./images/icon-scissors.svg",background:"scissors-bg"},
@@ -14,14 +14,14 @@ const AdvancedVersion = () => {
     <div className="advanced-version-container">
         <div className="advanced-row">
         <div className="advanced-column">
-            <ChoiceBtn btnData={moves[1]}/>
+            <ChoiceBtn handlePlayerMove={handleAdvancedPlayerMove} btnData={moves[1]}/>
         </div>
         </div>
         <div className="long-row">
             <div className="advanced-column">
             <div className="advanced-line advanced-top-left-line"></div>
 
-            <ChoiceBtn btnData={moves[4]}/>
+            <ChoiceBtn handlePlayerMove={handleAdvancedPlayerMove} btnData={moves[4]}/>
             <div className="advanced-line advanced-bottom-left-line"></div>
 
             </div>
@@ -29,7 +29,7 @@ const AdvancedVersion = () => {
             <div className="advanced-column">
             <div className="advanced-line advanced-top-right-line"></div>
 
-            <ChoiceBtn btnData={moves[0]}/>
+            <ChoiceBtn handlePlayerMove={handleAdvancedPlayerMove} btnData={moves[0]}/>
             <div className="advanced-line advanced-bottom-right-line"></div>
 
 
@@ -38,7 +38,7 @@ const AdvancedVersion = () => {
         <div className="medium-row">
             <div className="advanced-column">
 
-            <ChoiceBtn btnData={moves[3]}/>
+            <ChoiceBtn handlePlayerMove={handleAdvancedPlayerMove} btnData={moves[3]}/>
 
 
             </div>
@@ -48,7 +48,7 @@ const AdvancedVersion = () => {
             {/* </div> */}
             <div className="advanced-column">
 
-            <ChoiceBtn btnData={moves[2]}/>
+            <ChoiceBtn handlePlayerMove={handleAdvancedPlayerMove} btnData={moves[2]}/>
 
             </div>
         </div>

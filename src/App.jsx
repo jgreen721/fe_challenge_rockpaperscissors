@@ -64,6 +64,32 @@ function App() {
     if(playerWins == false)setScore(score=>score-1);
   }
 
+  const handleAdvancedPlayerMove=(playermove)=>{
+    console.log("playerMOve",playermove)
+    let randomNum = Math.random() * 5 | 0;
+      let cpuMove = moves[randomNum].move
+      setCpuMove(cpuMove);
+      setPlayerWins(determineAdvancedWinner(playermove,cpuMove));
+      setPlayerMove(playermove)
+  }
+
+  const determineAdvancedWinner=(playermove,cpuMove)=>{
+    let playerWins;
+    if(playermove == "scissors" && cpuMove == "paper" || playermove == "scissors" && cpuMove == "lizard")playerWins = true;
+    if(playermove == "scissors" && cpuMove == "spock" || playermove == "scissors" && cpuMove == "rock")playerWins = false;
+    if(playermove == "paper" && cpuMove == "rock" || playermove == "paper" && cpuMove == "spock")playerWins = true;
+    if(playermove == "paper" && cpuMove == "scissors" || playermove == "paper" && cpuMove == "lizard")playerWins = false;
+    if(playermove == "rock" && cpuMove == "scissors" || playermove == "rock" && cpuMove == "lizard")playerWins = true;
+    if(playermove == "rock" && cpuMove == "paper" || playermove == "rock" && cpuMove == "spock")playerWins = false;
+    if(playermove == "lizard" && cpuMove == "spock" || playermove == "lizard" && cpuMove == "paper")playerWins = true;
+    if(playermove == "lizard" && cpuMove == "rock" || playermove == "lizard" && cpuMove == "scissors")playerWins = false;
+    if(playermove == "spock" && cpuMove == "scissors" || playermove == "spock" && cpuMove == "rock")playerWins = true;
+    if(playermove == "spock" && cpuMove == "paper" || playermove == "spock" && cpuMove == "lizard")playerWins = false;
+    if(playermove == cpuMove)playerWins = null;
+
+    return playerWins;
+  }
+
   return (
     <div className="app">
       <Header spockVersion={spockVersion} score={score}/>
@@ -72,7 +98,7 @@ function App() {
         
         <>
         {spockVersion ?  
-              <AdvancedVersion handlePlayerMove={handlePlayerMove}/>
+              <AdvancedVersion handleAdvancedPlayerMove={handleAdvancedPlayerMove}/>
 
         :
         <RegularVersion handlePlayerMove={handlePlayerMove}/>

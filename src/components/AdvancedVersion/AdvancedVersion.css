@@ -10,7 +10,7 @@
 
 .long-row {
   display: flex;
-  width: 550px;
+  width: 500px;
   /* border: 2px solid red; */
   justify-content: space-between;
   margin-bottom: 4.5rem;
@@ -26,7 +26,7 @@
 
 .advanced-line {
   background: var(--navyblue);
-  width: 100%;
+  width: 200px;
   height: 1.5rem;
   position: absolute;
   z-index: 1;
@@ -38,7 +38,7 @@
 }
 
 .advanced-top-right-line {
-  transform: translate(-5rem) rotate(45deg);
+  transform: translate(-8rem) rotate(45deg);
 }
 
 .advanced-bottom-left-line {
@@ -53,7 +53,8 @@
   /* right: 
   top: 45%; */
   /* border: 3px solid red; */
-  width: 200px;
+  width: 300px;
+  /* background: red; */
 }
 @media screen and (max-width: 750px) {
   .long-row {
@@ -66,6 +67,17 @@
 }
 
 @media screen and (max-width: 450px) {
+  .advanced-line {
+    width: 100%;
+  }
+  /* .advanced-top-left-line {
+    transform: translate(2rem) rotate(-45deg);
+  }  */
+
+  .advanced-bottom-line {
+    width: 200px;
+    /* background: red; */
+  }
   .long-row {
     width: 350px;
   }

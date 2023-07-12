@@ -6,7 +6,9 @@ const Results = ({playerMove,cpuMove,handleGameReset,playerWins,handleChangeScor
     const moves = [
         {id:1,move:"paper",icon:"./images/icon-paper.svg",background:"paper-bg",winningColor:"blue"},
         {id:2,move:"scissors",icon:"./images/icon-scissors.svg",background:"scissors-bg",winningColor:"yellow"},
-        {id:3,move:"rock",icon:"./images/icon-rock.svg",background:"rock-bg",winningColor:"red"}
+        {id:3,move:"rock",icon:"./images/icon-rock.svg",background:"rock-bg",winningColor:"red"},
+        {id:4,move:"lizard",icon:"./images/icon-lizard.svg",background:"lizard-bg",winningColor:"violet"},
+        {id:5,move:"spock",icon:"./images/icon-spock.svg",background:"spock-bg",winningColor:"teal"}
       ]
       const [hasScored,setHasScored] = useState(false)
 
