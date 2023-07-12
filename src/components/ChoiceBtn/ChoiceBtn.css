@@ -77,6 +77,14 @@
   background: linear-gradient(var(--rockgradientbg));
 }
 
+.lizard-bg {
+  background: linear-gradient(var(--lizardgradientbg));
+}
+
+.spock-bg {
+  background: linear-gradient(var(--spokgradientbg));
+}
+
 .spin-btn {
   animation: spinwheel 1.5s forwards;
 }
