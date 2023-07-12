@@ -1,7 +1,7 @@
 .app {
   max-width: 144rem;
   margin: 0 auto;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   background: linear-gradient(var(--radialgradient));
   display: flex;
   flex-direction: column;
