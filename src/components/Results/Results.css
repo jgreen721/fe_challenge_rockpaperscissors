@@ -116,6 +116,8 @@
 
   .results-container {
     flex-direction: column;
+    padding: 7rem 4rem;
+    /* padding: 0rem; */
   }
 
   .choice-btn-silhouette {
